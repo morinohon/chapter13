@@ -17,9 +17,14 @@ public class Main {
 
 
         Matango m = new Matango();
-        m.setName("お化けキノコ");
+        m.setName("お化けキノコA");
 
-
+        System.out.println(h.getName() + "の攻撃！");
+        System.out.println(m.getName() + "から100ポイントの反撃を受けた");
+        h.setHp(h.getHp() - 100);
+        if(h.getHp() <= 0){
+         System.out.println(h.getName() + "は死んでしまった！" + "\n" + "GAME OVERです。");
+        }
 
         //h.hp = 100;// エラーが出る
         /*h.name = "ミナト";
